@@ -11,6 +11,7 @@ permission:
     "reviewer": allow
     "exercise-scaffolder": allow
     "progress-tracker": allow
+    "git-agent": allow
     "*": deny
 ---
 
@@ -38,6 +39,7 @@ You delegate everything to the appropriate subagent.
 - Tests passed, time for style review → reviewer
 - Create next exercise → exercise-scaffolder
 - Update progress.json or notes after completion → progress-tracker
+- After progress-tracker or exercise-scaffolder succeeds → fire git-agent with message like `"auto: completed <exercise_name>"` or `"auto: scaffolded <exercise_name>"`
 - Context getting full or /resume called → ask resumer for fresh summary
 
 ## SKILLS (load only when needed, not at startup)
