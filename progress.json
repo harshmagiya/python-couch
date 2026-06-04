@@ -1,0 +1,730 @@
+{
+  "schema_version": "1.0",
+  "lessons": [
+    "01_basics",
+    "02_collections",
+    "03_ml_foundations",
+    "03_algorithmic_foundations",
+    "04_numerical_python"
+  ],
+  "last_updated": "2026-06-02",
+  "meta": {
+    "python_version": "3.11.6",
+    "created_utc": "2026-02-03",
+    "course_version": 1
+  },
+  "rules": {
+    "hints_before_code": true,
+    "never_write_solution_without_explicit_request": true,
+    "review_last_exercise_before_new": true,
+    "constraints_must_include_disallowed_examples": true,
+    "require_recall_rewrite": true,
+    "tests_are_law": true
+  },
+  "cursor": {
+    "lesson": "03_algorithmic_foundations",
+    "exercise": "ex01_bsearch_index"
+  },
+  "completed": [
+    {
+      "lesson": "01_basics",
+      "exercise": "ex01_number_summary",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 6
+      },
+      "completed_utc": "2026-02-03",
+      "strategies": ["single_pass_stats", "min_max", "input_validation"]
+    },
+    {
+      "lesson": "01_basics",
+      "exercise": "ex02_word_frequencies",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 7
+      },
+      "completed_utc": "2026-02-03",
+      "coach_observations": [
+        "unused_import",
+        "string_concat_in_loop",
+        "redundant_dict_keys_check"
+      ],
+      "strategies": ["dict_counting", "split_tokenize", "frequency_analysis"]
+    },
+    {
+      "lesson": "01_basics",
+      "exercise": "ex03_parse_kv_lines",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 6
+      },
+      "completed_utc": "2026-02-06",
+      "coach_observations": [
+        "over_aggressive_whitespace_removal",
+        "raise_value_error_without_message"
+      ],
+      "strategies": ["line_parsing", "split_with_limit", "input_validation"]
+    },
+    {
+      "lesson": "01_basics",
+      "exercise": "ex04_read_int_lines",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 3
+      },
+      "completed_utc": "2026-02-07",
+      "coach_observations": [
+        "debug_print_left_in",
+        "bare_except",
+        "line_number_via_index"
+      ],
+      "strategies": ["line_parsing", "exception_handling", "input_validation"]
+    },
+    {
+      "lesson": "01_basics",
+      "exercise": "ex05_balanced_brackets",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 10
+      },
+      "completed_utc": "2026-02-07",
+      "coach_observations": [
+        "debug_print_left_in",
+        "use_pop_without_index"
+      ],
+      "strategies": ["stack_parsing", "string_traversal", "single_pass"]
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex01_group_by_length",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 4
+      },
+      "completed_utc": "2026-02-07",
+      "coach_observations": [
+        "redundant_dict_keys_check"
+      ],
+      "strategies": ["dict_grouping", "iter_aggregation"]
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex02_top_k_frequencies",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 6
+      },
+      "completed_utc": "2026-02-09",
+      "coach_observations": [
+        "control_flow_complexity",
+        "repeated_min_computation"
+      ],
+      "strategies": ["sort_with_key", "frequency_analysis", "tie_break"]
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex03_invert_index",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 6
+      },
+      "completed_utc": "2026-02-10",
+      "coach_observations": [
+        "set_iteration_nondeterminism",
+        "naming_consistency"
+      ],
+      "strategies": ["dict_inversion", "collision_handling", "set_iteration"]
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex04_unique_preserve_order",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 6
+      },
+      "completed_utc": "2026-02-11",
+      "coach_observations": [
+        "quadratic_membership_check",
+        "avoid_pass_in_if"
+      ],
+      "strategies": ["set_membership", "order_preservation", "single_pass"]
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex05_merge_inventory",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 6
+      },
+      "completed_utc": "2026-02-11",
+      "coach_observations": [
+        "avoid_mutating_inputs"
+      ],
+      "strategies": ["dict_update", "merge_logic"]
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex06_best_per_key",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 5
+      },
+      "completed_utc": "2026-02-12",
+      "coach_observations": [
+        "avoid_sort_for_two_items",
+        "whitespace_consistency"
+      ],
+      "strategies": ["max_min_reduction", "tie_break"]
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex07_bigram_frequencies",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 7
+      },
+      "completed_utc": "2026-02-14",
+      "coach_observations": [
+        "prefer_for_range_over_manual_indices",
+        "tuple_spacing"
+      ],
+      "strategies": ["adjacent_pairs", "dict_counting", "loop_with_index"]
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex08_reverse_dict_unique",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 5
+      },
+      "completed_utc": "2026-02-14",
+      "coach_observations": [
+        "raise_value_error_message_quality",
+        "whitespace_consistency"
+      ],
+      "strategies": ["dict_inversion", "collision_handling", "validation"]
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex09_first_nonrepeating",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 7
+      },
+      "completed_utc": "2026-02-14",
+      "coach_observations": [
+        "quadratic_list_membership",
+        "avoid_pop_0_on_lists"
+      ],
+      "strategies": ["two_pass_counting", "set_membership", "order_preservation"]
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex10_two_sum_exists",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 6
+      },
+      "completed_utc": "2026-02-15",
+      "coach_observations": [
+        "use_set_for_membership"
+      ],
+      "strategies": ["set_membership", "single_pass"]
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex11_merge_sorted_lists",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 4
+      },
+      "completed_utc": "2026-02-16",
+      "coach_observations": [
+        "avoid_pop_0_on_lists",
+        "two_pointer_iteration"
+      ],
+      "strategies": ["two_pointer", "merge_algorithm"]
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex12_group_anagrams",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 6
+      },
+      "completed_utc": "2026-02-16",
+      "coach_observations": [
+        "canonical_key_grouping"
+      ],
+      "strategies": ["canonical_key", "dict_grouping", "sorting"]
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex13_present_in_second",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 5
+      },
+      "completed_utc": "2026-02-17",
+      "coach_observations": [
+        "use_set_for_membership",
+        "preserve_order_with_set_tracking"
+      ],
+      "strategies": ["set_intersection", "order_preservation"]
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex14_first_duplicate",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 5
+      },
+      "completed_utc": "2026-02-17",
+      "coach_observations": [
+        "use_set_for_membership"
+      ],
+      "strategies": ["set_membership", "single_pass"]
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex15_longest_run",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 6
+      },
+      "completed_utc": "2026-02-17",
+      "coach_observations": [
+        "separate_current_vs_best_tracking"
+      ],
+      "strategies": ["single_pass_stats", "run_length", "edge_cases"]
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex16_compact_ranges",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 6
+      },
+      "completed_utc": "2026-02-19",
+      "strategies": ["interval_compaction", "sorting"]
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex17_merge_ranges",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 8
+      },
+      "completed_utc": "2026-02-21",
+      "strategies": ["interval_merge", "sorting", "sweep"]
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex18_range_intersection",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 8
+      },
+      "completed_utc": "2026-02-22",
+      "coach_observations": [
+        "prefer_two_pointer_over_nested_loops"
+      ],
+      "strategies": ["two_pointer", "interval_ops"]
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex19_total_covered",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 7
+      },
+      "completed_utc": "2026-02-22",
+      "coach_observations": [
+        "avoid_shadowing_builtins"
+      ],
+      "strategies": ["interval_merge", "sweep", "edge_cases"]
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex20_insert_range",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 8
+      },
+      "completed_utc": "2026-02-22",
+      "coach_observations": [
+        "avoid_mutating_inputs",
+        "respect_constraints_no_full_sort"
+      ],
+      "strategies": ["interval_ops", "single_pass", "edge_cases"]
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex21_subtract_range",
+      "status": "completed",
+      "tests": {
+        "runner": "pytest",
+        "result": "pass",
+        "passed": 9
+      },
+      "completed_utc": "2026-02-27",
+      "strategies": ["interval_ops", "split_logic"]
+    }
+  ],
+  "scaffolding": {
+    "03_algorithmic_foundations": {
+      "ex01_bsearch_index": {
+        "strategies": ["binary_search", "loop_invariant"]
+      },
+      "ex02_first_and_last": {
+        "strategies": ["binary_search", "boundary_shrink", "loop_invariant"]
+      },
+      "ex03_pair_sum_sorted": {
+        "strategies": ["two_pointer_sorted", "converging_pointers"]
+      },
+      "ex04_kadane_max_subarray": {
+        "strategies": ["kadane", "single_pass", "dp_warmup"]
+      },
+      "ex05_move_zeros": {
+        "strategies": ["in_place_partition", "two_pointer", "stable_order"]
+      },
+      "ex06_max_sum_subarray_k": {
+        "strategies": ["sliding_window", "single_pass", "fixed_k"]
+      },
+      "ex07_longest_substring_no_repeat": {
+        "strategies": ["sliding_window", "hashmap", "variable_window"]
+      },
+      "ex08_reverse_list_in_place": {
+        "strategies": ["in_place_swap", "two_pointer", "head_tail"]
+      },
+      "ex09_tree_bfs_level_order": {
+        "strategies": ["tree_bfs", "queue", "level_order"]
+      },
+      "ex10_tree_dfs_inorder": {
+        "strategies": ["tree_dfs", "recursion", "inorder"]
+      },
+      "ex11_flatten": {
+        "strategies": ["recursion", "list_traversal", "tree_like_data"]
+      },
+      "ex12_subsets": {
+        "strategies": ["backtracking", "recursion", "choose_dont_choose", "combinatorics"]
+      },
+      "ex13_climb_stairs": {
+        "strategies": ["dp_1d", "bottom_up", "recurrence"]
+      },
+      "ex14_lis": {
+        "strategies": ["dp_1d", "subsequence", "state_transition"]
+      },
+      "ex15_edit_distance": {
+        "strategies": ["dp_2d", "wagner_fischer", "rolling_rows"]
+      },
+      "ex16_top_k_streaming": {
+        "strategies": ["heap", "min_heap_of_size_k", "streaming"]
+      }
+    },
+    "04_numerical_python": {
+      "ex01_column_stats": {
+        "strategies": ["numpy", "vectorized", "axis_reduction", "population_std"]
+      },
+      "ex02_subtract_row_mean": {
+        "strategies": ["numpy", "broadcasting", "keepdims", "row_centering"]
+      },
+      "ex03_clip_outliers": {
+        "strategies": ["numpy", "boolean_masking", "np_where", "percentile"]
+      },
+      "ex04_logsumexp": {
+        "strategies": ["numpy", "numerical_stability", "max_subtraction", "log_exp"]
+      },
+      "ex05_softmax_rows": {
+        "strategies": ["numpy", "softmax", "numerical_stability", "broadcasting"]
+      }
+    }
+  },
+  "weakness_tags": [
+    {
+      "tag": "quadratic_string_building",
+      "severity": "medium",
+      "evidence": ["01_basics/ex02_word_frequencies"],
+      "note": "Char-by-char `s += chunk` in a loop is O(n^2); use a list + ''.join(...) once."
+    },
+    {
+      "tag": "bare_except",
+      "severity": "high",
+      "evidence": ["01_basics/ex04_read_int_lines"],
+      "note": "`except:` swallows real bugs (KeyboardInterrupt, MemoryError). Catch the specific exception, usually ValueError here."
+    },
+    {
+      "tag": "debug_prints_in_final_code",
+      "severity": "medium",
+      "evidence": ["01_basics/ex04_read_int_lines", "01_basics/ex05_balanced_brackets"],
+      "note": "Strip `print(...)` calls before final run; replace with proper error/return value."
+    },
+    {
+      "tag": "dict_keys_verbose_check",
+      "severity": "low",
+      "evidence": ["01_basics/ex02_word_frequencies", "02_collections/ex01_group_by_length"],
+      "note": "Use `key in d`, not `key in d.keys()`. Same semantics, less noise."
+    },
+    {
+      "tag": "shadow_builtins",
+      "severity": "medium",
+      "evidence": ["02_collections/ex19_total_covered"],
+      "note": "Avoid `for range in ...`, `list = ...`, `id = ...`. Rename to `r`, `xs`, `obj_id`."
+    },
+    {
+      "tag": "quadratic_list_membership",
+      "severity": "medium",
+      "evidence": ["02_collections/ex04_unique_preserve_order", "02_collections/ex09_first_nonrepeating"],
+      "note": "`if x in some_list` inside a loop is O(n^2). Use a `set` for membership tracking; preserve order with a separate result list."
+    },
+    {
+      "tag": "manual_index_loop",
+      "severity": "low",
+      "evidence": ["02_collections/ex07_bigram_frequencies"],
+      "note": "`while i < n: ...; i += 1` over a list should usually be `for i in range(n)` or `for x in xs`."
+    },
+    {
+      "tag": "control_flow_complexity",
+      "severity": "medium",
+      "evidence": ["02_collections/ex02_top_k_frequencies"],
+      "note": "Nested while/for/else/break trees for a single transform is a smell; usually a `sorted(..., key=...)` does the job in a few lines."
+    }
+  ],
+  "style_profile": {
+    "preferences": [
+      "small_functions",
+      "clear_names",
+      "tests_first"
+    ],
+    "common_issues": [],
+    "watchlist": [
+      {
+        "tag": "remove_unused_imports",
+        "severity": "low",
+        "evidence": ["01_basics/ex02_word_frequencies"],
+        "note": "Treat as a cleanup habit; only escalate if repeated."
+      },
+      {
+        "tag": "avoid_quadratic_string_building",
+        "severity": "medium",
+        "evidence": ["01_basics/ex02_word_frequencies"],
+        "note": "Mention as performance habit; enforce via review, not dedicated drills unless repeated."
+      },
+      {
+        "tag": "prefer_direct_dict_membership",
+        "severity": "low",
+        "evidence": ["01_basics/ex02_word_frequencies"],
+        "note": "Style cleanup; do not over-index on it."
+      }
+    ],
+    "notes": []
+  },
+  "review_queue": [
+    {
+      "lesson": "01_basics",
+      "exercise": "ex01_number_summary",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-06-02"
+    },
+    {
+      "lesson": "01_basics",
+      "exercise": "ex02_word_frequencies",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-06-09"
+    },
+    {
+      "lesson": "01_basics",
+      "exercise": "ex03_parse_kv_lines",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-06-16"
+    },
+    {
+      "lesson": "01_basics",
+      "exercise": "ex04_read_int_lines",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-06-23"
+    },
+    {
+      "lesson": "01_basics",
+      "exercise": "ex05_balanced_brackets",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-06-30"
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex01_group_by_length",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-07-07"
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex02_top_k_frequencies",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-07-14"
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex03_invert_index",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-07-21"
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex04_unique_preserve_order",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-07-28"
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex05_merge_inventory",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-08-04"
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex06_best_per_key",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-08-11"
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex07_bigram_frequencies",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-08-18"
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex08_reverse_dict_unique",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-08-25"
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex09_first_nonrepeating",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-09-01"
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex10_two_sum_exists",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-09-08"
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex11_merge_sorted_lists",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-09-15"
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex12_group_anagrams",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-09-22"
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex13_present_in_second",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-09-29"
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex14_first_duplicate",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-10-06"
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex15_longest_run",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-10-13"
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex16_compact_ranges",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-10-20"
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex17_merge_ranges",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-10-27"
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex18_range_intersection",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-11-03"
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex19_total_covered",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-11-10"
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex20_insert_range",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-11-17"
+    },
+    {
+      "lesson": "02_collections",
+      "exercise": "ex21_subtract_range",
+      "reason": "spaced_repetition",
+      "due_utc": "2026-11-24"
+    }
+  ]
+}

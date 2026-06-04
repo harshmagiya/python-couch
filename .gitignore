@@ -1,0 +1,24 @@
+# Virtual environments
+.venv/
+
+# Python bytecode and caches
+__pycache__/
+*.pyc
+*.pyo
+
+# Pytest
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Windows PowerShell device-name artifacts (e.g. accidental `> NUL` redirects)
+NUL
+nul
+NUL.bak
+
+# AI assistant artifacts
+.claude/
+
+# Ruff cache
+.ruff_cache/
