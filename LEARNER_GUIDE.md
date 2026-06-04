@@ -38,7 +38,7 @@ That's the whole loop. Five steps, repeated ~30-50 times.
 ```powershell
 pytest -q                      # run all tests
 python tools/check_lint.py     # run the linter
-# (optional) git add ... && git commit -m "..."  # see notes/git_cheatsheet.md
+# git add ... && git commit -m "..."  # auto-done by coach; see notes/git_cheatsheet.md
 # (optional) open progress.json to see your cursor and review queue
 ```
 
@@ -77,8 +77,9 @@ coach does. The coach might:
 - Strengthen the tests with a new edge case (this is allowed; tests
   are the source of truth).
 
-The coach then updates `progress.json` and `notes/cheatsheet.md` and
-generates the next exercise folder.
+The coach then updates `progress.json` and `notes/cheatsheet.md`,
+auto-commits everything to git, pushes to remote, and generates the
+next exercise folder.
 
 ## Spaced repetition is automatic
 

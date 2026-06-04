@@ -13,15 +13,14 @@ git config --global init.defaultBranch main
 git config --global core.autocrlf true   # Windows: convert line endings on checkout, not on commit
 ```
 
-The repo is **not** currently a git repo. To start:
+The repo is already a git repo with a remote at `origin/main`. The AI
+coach auto-commits and pushes at each exercise boundary. If you want
+to commit mid-session, use the commands below — otherwise the coach
+handles it.
 
-```powershell
-cd "C:\Users\harsh\Desktop\projects\learning python"
-git init
-```
-
-The `.gitignore` already in the repo covers `__pycache__`, `.venv`,
-`.pytest_cache`, and `NUL`, so you do not need to write one.
+The `.gitignore` covers `__pycache__`, `.venv`, `.pytest_cache`,
+`.claude/`, `.ruff_cache/`, and `NUL` artifacts, so you do not need
+to write one.
 
 ## The 8 commands you will actually use
 
