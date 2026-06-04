@@ -22,7 +22,7 @@ The caller passes a commit `message`. Always use it verbatim.
 ```powershell
 git add -A
 git commit -m "<message>"
-git push 2>$null; if ($LASTEXITCODE -ne 0) { Write-Host "No remote configured — push skipped. Add remote later with: git remote add origin <url>" }
+git push
 ```
 
 ## When you are called
